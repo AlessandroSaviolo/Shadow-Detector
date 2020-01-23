@@ -57,25 +57,23 @@ To better present the different steps that compose the proposed algorithm, the o
 3.  Candidates computation: segments belonging to the white components of the thresholded image (at point 2) are selected as shadow candidates
 
 <p align="center"> 
-    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/5.jpg">
-</p>
-<p align="center">
-    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/6.jpg">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/5.png">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/6.png">
 </p>
 
 4.  Candidates merging: “similar” candidates are merged (the illustrated matrix is used to identify candidates that need to be merged)
 
 <p align="center"> 
-    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/8.jpg">
-    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/9.jpg">
-    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/10.jpg">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/8.png">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/9.png">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/10.png">
  </p>
 
 5.  Candidates comparison: candidates are compared with their non-candidate neighbors and selected as shadow based on chromaticity and texture
 
 <p align="center"> 
-    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/12.jpg">
-    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/13.jpg">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/12.png">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/13.png">
  </p>
  
  After computing these 5 steps, the algorithm outputs the detected shadows:
