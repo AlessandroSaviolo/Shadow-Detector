@@ -31,7 +31,7 @@ The features considered by the shadow detector for the comparison of different s
 To better present the different steps that compose the proposed algorithm, the output produced by each step is illustrated. In particular, the following image is considered:
 
 <p align="center"> 
-    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/1.jpg">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/1.jpg" width="250">
  </p>
 
 ### Steps:
