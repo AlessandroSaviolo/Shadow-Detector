@@ -39,44 +39,45 @@ To better present the different steps that compose the proposed algorithm, the o
 0.  Preprocessing: filters are applied to the image in order to get better results in the segmentation step
 
 <p align="center"> 
-    <img src="https://github.com/AlessandroSaviolo/GAN-using-CelebA-Dataset/blob/master/output/001_image.png">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/2.jpg">
  </p>
 
 1.  Segmentation: 𝑘means is used to segment the image
 
 <p align="center"> 
-    <img src="https://github.com/AlessandroSaviolo/GAN-using-CelebA-Dataset/blob/master/output/001_image.png">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/3.jpg">
  </p>
 
 2.  Intensity thresholding: image is converted to HSV color space and the intensity channel is thresholded
 
 <p align="center"> 
-    <img src="https://github.com/AlessandroSaviolo/GAN-using-CelebA-Dataset/blob/master/output/001_image.png">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/4.jpg">
  </p>
 
 3.  Candidates computation: segments belonging to the white components of the thresholded image (at point 2) are selected as shadow candidates
 
 <p align="center"> 
-    <img src="https://github.com/AlessandroSaviolo/GAN-using-CelebA-Dataset/blob/master/output/001_image.png">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/5.jpg">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/6.jpg">
  </p>
 
-4.  Candidates merging: “similar” candidates are merged
+4.  Candidates merging: “similar” candidates are merged (the illustrated matrix is used to identify candidates that need to be merged)
 
 <p align="center"> 
-    <img src="https://github.com/AlessandroSaviolo/GAN-using-CelebA-Dataset/blob/master/output/001_image.png">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/8.jpg">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/9.jpg">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/10.jpg">
  </p>
 
 5.  Candidates comparison: candidates are compared with their non-candidate neighbors and selected as shadow based on chromaticity and texture
 
 <p align="center"> 
-    <img src="https://github.com/AlessandroSaviolo/GAN-using-CelebA-Dataset/blob/master/output/001_image.png">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/12.jpg">
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/13.jpg">
  </p>
-
-## 4. Examples of Detected Shadows
-
+ 
+ After computing these 5 steps, the algorithm outputs the detected shadows:
+ 
 <p align="center"> 
-    <img src="https://github.com/AlessandroSaviolo/GAN-using-CelebA-Dataset/blob/master/output/001_image.png">
-    <img src="https://github.com/AlessandroSaviolo/GAN-using-CelebA-Dataset/blob/master/output/002_image.png">
-    <img src="https://github.com/AlessandroSaviolo/GAN-using-CelebA-Dataset/blob/master/output/003_image.png">
-    <img src="https://github.com/AlessandroSaviolo/GAN-using-CelebA-Dataset/blob/master/output/004_image.png">
- </p>
+    <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/14.jpg">
+ </p> 
