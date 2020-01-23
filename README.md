@@ -58,8 +58,10 @@ To better present the different steps that compose the proposed algorithm, the o
 
 <p align="center"> 
     <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/5.jpg">
+</p>
+<p align="center">
     <img src="https://github.com/AlessandroSaviolo/Shadow-Detector/blob/master/steps-output/6.jpg">
- </p>
+</p>
 
 4.  Candidates merging: “similar” candidates are merged (the illustrated matrix is used to identify candidates that need to be merged)
 
