@@ -36,4 +36,11 @@ The shadow detector method is divided in the following steps:
 
 - [SVHN Test set](http://ufldl.stanford.edu/housenumbers/test.tar.gz)
 
-## 4. Dataset
+## 4. Examples of Detected Shadows
+
+<p align="center"> 
+    <img src="https://github.com/AlessandroSaviolo/GAN-using-CelebA-Dataset/blob/master/output/001_image.png">
+    <img src="https://github.com/AlessandroSaviolo/GAN-using-CelebA-Dataset/blob/master/output/002_image.png">
+    <img src="https://github.com/AlessandroSaviolo/GAN-using-CelebA-Dataset/blob/master/output/003_image.png">
+    <img src="https://github.com/AlessandroSaviolo/GAN-using-CelebA-Dataset/blob/master/output/004_image.png">
+ </p>
