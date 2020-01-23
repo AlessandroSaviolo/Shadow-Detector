@@ -1,2 +1,1 @@
-# Shadow-Detector
-Shadow Detector
+# Shadow Detector
